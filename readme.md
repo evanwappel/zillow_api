@@ -1,9 +1,9 @@
-This is a simple python file that should get you
-up and running with the Zillow API and PyZillow
+Create a map of Price-To-Rent-Ratio for all available zip codes in Zillow
 
-Documentation for PyZillow is here:
-https://media.readthedocs.org/pdf/pyzillow/latest/pyzillow.pdf
+Download the latest CSV at:
 
-I know there is probably an easier way to expose the attributes
-so if there are any suggestions, please feel free to
-comment and/or send me a note.
+http://files.zillowstatic.com/research/public/Zip/Zip_PriceToRentRatio_AllHomes.csv
+
+Zip code boundaries:
+
+https://github.com/eww125/zillow_api/tree/master/cb_2016_us_zcta510_500k

@@ -1,5 +1,3 @@
-#url = 'http://files.zillowstatic.com/research/public/Metro/Metro_PriceToRentRatio_AllHomes.csv'
-
 url = 'http://files.zillowstatic.com/research/public/Zip/Zip_PriceToRentRatio_AllHomes.csv'
 import pandas as pd
 import io
