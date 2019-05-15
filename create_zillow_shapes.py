@@ -21,43 +21,17 @@ print(list(zillow))
 print(len(zillow))
 
 
+#import matplotlib.pyplot as plt
+#plt.figure()
+#hist = zillow_shapes['2019-03'].hist(bins=10)
+#zillow.hist(column='2019-03', bins=20)
+#zillow.plot(kind ='bar')
+
+
+
 zillow_shapes = zip_codes.merge(zillow, on='zip')
 print(zillow_shapes.head())
 print(len(zillow_shapes))
 
 out = r'zillow_shapes.shp'
-#selection = df[0:50]
-zillow_shapes.to_file(out)
-"""
-# `country_shapes` is GeoDataFrame with country shapes and iso codes
-In [7]: country_shapes.head()
-Out[7]:
-                                            geometry iso_a3
-0  (POLYGON ((180 -16.06713266364245, 180 -16.555...    FJI
-1  POLYGON ((33.90371119710453 -0.950000000000000...    TZA
-2  POLYGON ((-8.665589565454809 27.65642588959236...    ESH
-3  (POLYGON ((-122.84 49.00000000000011, -122.974...    CAN
-4  (POLYGON ((-122.84 49.00000000000011, -120 49....    USA
-
-# `country_names` is DataFrame with country names and iso codes
-In [8]: country_names.head()
-Out[8]:
-                       name iso_a3
-0                      Fiji    FJI
-1                  Tanzania    TZA
-2                 W. Sahara    ESH
-3                    Canada    CAN
-4  United States of America    USA
-
-# Merge with `merge` method on shared variable (iso codes):
-In [9]: country_shapes = country_shapes.merge(country_names, on='iso_a3')
-
-In [10]: country_shapes.head()
-Out[10]:
-                                            geometry iso_a3                      name
-0  (POLYGON ((180 -16.06713266364245, 180 -16.555...    FJI                      Fiji
-1  POLYGON ((33.90371119710453 -0.950000000000000...    TZA                  Tanzania
-2  POLYGON ((-8.665589565454809 27.65642588959236...    ESH                 W. Sahara
-3  (POLYGON ((-122.84 49.00000000000011, -122.974...    CAN                    Canada
-4  (POLYGON ((-122.84 49.00000000000011, -120 49....    USA  United States of America
-"""
+#zillow_shapes.to_file(out)
