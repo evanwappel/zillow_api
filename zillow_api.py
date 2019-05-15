@@ -1,17 +1,11 @@
-# Example of how to use pyzillow
-# Store your Zillow APY key in a file called
-# zillow_api_key.py
-#from zillow_api_key import zillow_api_key
+# pip install  pyzillow
 
 # api_key import
-import os
-home_dir =  os.path.expanduser('~')
-directory_path = home_dir + "/api_keys/"
-f = open(directory_path + 'zillow_api', 'r')
+f = open(r'C:\Users\evanw\zillow_api.txt')
 API_KEY = f.read().rstrip()
 f.close()
 
-# Hard code the address
+# address
 address = '4271 Fitzwilliam St'
 zip_code = 'Dublin, CA'
 
@@ -19,8 +13,6 @@ from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults
 zillow_data = ZillowWrapper(API_KEY)
 deep_search_response = zillow_data.get_deep_search_results(address, zip_code)
 result = GetDeepSearchResults(deep_search_response)
-#, zillow_id # zillow id, needed for the GetUpdatedPropertyDetails
-
 
 zillow_id = result.zillow_id
 home_type = result.home_type
