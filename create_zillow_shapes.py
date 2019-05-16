@@ -22,11 +22,12 @@ print(list(zillow))
 print(len(zillow))
 
 
-#import matplotlib.pyplot as plt
-#plt.figure()
+import matplotlib.pyplot as plt
+plt.figure()
 #hist = zillow_shapes['2019-03'].hist(bins=10)
-#zillow.hist(column='2019-03', bins=20)
-#zillow.plot(kind ='bar')
+zillow['2019-03'].hist(bins=100)
+#zillow['2019-03'].plot(kind ='hist', bins = 100)
+plt.show()
 
 
 
