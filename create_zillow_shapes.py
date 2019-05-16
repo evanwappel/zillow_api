@@ -34,15 +34,15 @@ zillow['range'] = ''
 for x in range(0,len(zillow)):
     value = zillow['2019-03'].iloc[x]
     if value < 5:
-        zillow['range'].iloc[x] = 'less than 5 (green)'
+        zillow['range'].iloc[x] = '1. less than 5 (green)'
     elif 5 < value < 10:
-        zillow['range'].iloc[x] = '5-10 (yellow)'
+        zillow['range'].iloc[x] = '2. 5-10 (yellow)'
     elif 10 < value < 15:
-        zillow['range'].iloc[x] = '10-15 (orange)'
+        zillow['range'].iloc[x] = '3. 10-15 (orange)'
     elif 15 < value < 20:
-        zillow['range'].iloc[x] = '15-20 (red)'
+        zillow['range'].iloc[x] = '4. 15-20 (red)'
     elif value > 20:
-        zillow['range'].iloc[x] = 'greater than 20 (blue)'
+        zillow['range'].iloc[x] = '5. greater than 20 (blue)'
 
 zillow_shapes = zip_codes.merge(zillow, on='zip')
 print(zillow_shapes.head())
