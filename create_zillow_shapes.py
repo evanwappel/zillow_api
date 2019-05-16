@@ -1,4 +1,4 @@
-#create shapefile
+#create shapefile for zip codes
 #url = 'http://files.zillowstatic.com/research/public/Zip/Zip_PriceToRentRatio_AllHomes.csv'
 import pandas as pd
 import geopandas as gpd
