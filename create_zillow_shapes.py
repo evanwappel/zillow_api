@@ -33,14 +33,14 @@ pd.options.mode.chained_assignment = None
 zillow['range'] = ''
 for x in range(0,len(zillow)):
     value = zillow['2019-03'].iloc[x]
-    if value < 5:
-        zillow['range'].iloc[x] = '1. less than 5 (green)'
-    elif 5 < value < 10:
-        zillow['range'].iloc[x] = '2. 5-10 (yellow)'
-    elif 10 < value < 15:
-        zillow['range'].iloc[x] = '3. 10-15 (orange)'
-    elif 15 < value < 20:
-        zillow['range'].iloc[x] = '4. 15-20 (red)'
+    if value < 8:
+        zillow['range'].iloc[x] = '1. less than 8 (green)'
+    elif 8 < value < 12:
+        zillow['range'].iloc[x] = '2. 8-12 (yellow)'
+    elif 12 < value < 16:
+        zillow['range'].iloc[x] = '3. 12-16 (orange)'
+    elif 16 < value < 20:
+        zillow['range'].iloc[x] = '4. 16-20 (red)'
     elif value > 20:
         zillow['range'].iloc[x] = '5. greater than 20 (blue)'
 
