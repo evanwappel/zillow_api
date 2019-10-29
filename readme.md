@@ -2,7 +2,7 @@ Create a map of Price-To-Rent-Ratio for all available zip codes in Zillow
 
 Download the latest CSV at:
 
-`wget http://files.zillowstatic.com/research/public/Zip/Zip_PriceToRentRatio_AllHomes.csv'
+`wget http://files.zillowstatic.com/research/public/Zip/Zip_PriceToRentRatio_AllHomes.csv`
 
 Zip code boundaries:
 
